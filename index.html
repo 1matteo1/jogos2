@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>JS em 3 Níveis — jogos de lógica de programação</title>
+  <meta name="description" content="Três jogos em JavaScript puro que evoluem em complexidade: condicionais, listas/DOM e Canvas.">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html"><span class="dot"></span>js-em-3-niveis</a>
+    <nav class="topbar__levels" aria-label="Navegação entre níveis">
+      <a class="level-pill" data-level="1" href="nivel1.html">Nível 1</a>
+      <a class="level-pill" data-level="2" href="nivel2.html">Nível 2</a>
+      <a class="level-pill" data-level="3" href="nivel3.html">Nível 3</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero">
+      <p class="hero__eyebrow">lógica de programação · javascript puro</p>
+      <h1>Três jogos, três degraus de lógica.</h1>
+      <p>Cada nível pega um conceito novo e constrói em cima do anterior — sem framework, só HTML, CSS e JavaScript direto no navegador.</p>
+    </section>
+
+    <div class="path">
+
+      <article class="level-card" data-level="1">
+        <div>
+          <span class="level-card__tag">nível 1</span>
+          <h2>Adivinhe o Número</h2>
+          <p>Condicionais (<code>if/else</code>) e números aleatórios (<code>Math.random</code>) via input e botão.</p>
+        </div>
+        <a class="btn" href="nivel1.html">Jogar →</a>
+      </article>
+
+      <article class="level-card" data-level="2">
+        <div>
+          <span class="level-card__tag">nível 2</span>
+          <h2>Jogo da Velha</h2>
+          <p>Um array guarda o estado do tabuleiro; cliques alteram o DOM em tempo real numa grade CSS Grid.</p>
+        </div>
+        <a class="btn" href="nivel2.html">Jogar →</a>
+      </article>
+
+      <article class="level-card" data-level="3">
+        <div>
+          <span class="level-card__tag">nível 3</span>
+          <h2>Cobrinha</h2>
+          <p>API Canvas, escuta de teclado (<code>keydown</code>) e um loop contínuo (<code>setInterval</code>).</p>
+        </div>
+        <a class="btn" href="nivel3.html">Jogar →</a>
+      </article>
+
+    </div>
+  </main>
+
+  <footer>feito com HTML, CSS e JavaScript puro — sem frameworks</footer>
+
+</body>
+</html>

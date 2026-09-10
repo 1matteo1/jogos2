@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nível 2 — Jogo da Velha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html"><span class="dot"></span>js-em-3-niveis</a>
+    <nav class="topbar__levels" aria-label="Navegação entre níveis">
+      <a class="level-pill" data-level="1" href="nivel1.html">Nível 1</a>
+      <a class="level-pill is-active" data-level="2" href="nivel2.html">Nível 2</a>
+      <a class="level-pill" data-level="3" href="nivel3.html">Nível 3</a>
+    </nav>
+  </header>
+
+  <main data-theme="2">
+    <div class="game-header">
+      <span class="game-header__tag">nível 2 · listas + dom</span>
+      <h1>Jogo da Velha</h1>
+      <p>Dois jogadores no mesmo aparelho. O tabuleiro vive em um array de 9 posições; cada clique atualiza o array e redesenha a grade.</p>
+    </div>
+
+    <div class="panel">
+      <div class="board-wrap">
+        <p class="turn-indicator" id="turn-indicator" role="status" aria-live="polite">Vez de: <strong>X</strong></p>
+
+        <div class="board" id="board" aria-label="Tabuleiro da velha"></div>
+
+        <button class="btn btn--outline" id="restart-btn">Reiniciar partida</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>feito com HTML, CSS e JavaScript puro — sem frameworks</footer>
+
+  <script src="js/nivel2.js"></script>
+</body>
+</html>

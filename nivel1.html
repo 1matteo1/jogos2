@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nível 1 — Adivinhe o Número</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html"><span class="dot"></span>js-em-3-niveis</a>
+    <nav class="topbar__levels" aria-label="Navegação entre níveis">
+      <a class="level-pill is-active" data-level="1" href="nivel1.html">Nível 1</a>
+      <a class="level-pill" data-level="2" href="nivel2.html">Nível 2</a>
+      <a class="level-pill" data-level="3" href="nivel3.html">Nível 3</a>
+    </nav>
+  </header>
+
+  <main data-theme="1">
+    <div class="game-header">
+      <span class="game-header__tag">nível 1 · condicionais</span>
+      <h1>Adivinhe o Número</h1>
+      <p>Pensei em um número entre 1 e 100. Digite um palpite e aperte "Chutar" — eu digo se é mais alto ou mais baixo.</p>
+    </div>
+
+    <div class="panel">
+      <form class="guess-form" id="guess-form" autocomplete="off">
+        <input
+          type="number"
+          id="guess-input"
+          min="1"
+          max="100"
+          placeholder="1–100"
+          required
+        >
+        <button type="submit" class="btn">Chutar</button>
+        <button type="button" class="btn btn--outline" id="restart-btn">Novo jogo</button>
+      </form>
+
+      <p class="feedback" id="feedback" role="status" aria-live="polite"></p>
+
+      <div class="stat-row">
+        <span>tentativas: <strong id="attempt-count">0</strong></span>
+        <span>recorde: <strong id="best-count">—</strong></span>
+      </div>
+
+      <div class="log" id="log" aria-label="Histórico de tentativas"></div>
+    </div>
+  </main>
+
+  <footer>feito com HTML, CSS e JavaScript puro — sem frameworks</footer>
+
+  <script src="js/nivel1.js"></script>
+</body>
+</html>

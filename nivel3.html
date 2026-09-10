@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Nível 3 — Cobrinha</title>
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <header class="topbar">
+    <a class="topbar__brand" href="index.html"><span class="dot"></span>js-em-3-niveis</a>
+    <nav class="topbar__levels" aria-label="Navegação entre níveis">
+      <a class="level-pill" data-level="1" href="nivel1.html">Nível 1</a>
+      <a class="level-pill" data-level="2" href="nivel2.html">Nível 2</a>
+      <a class="level-pill is-active" data-level="3" href="nivel3.html">Nível 3</a>
+    </nav>
+  </header>
+
+  <main data-theme="3">
+    <div class="game-header">
+      <span class="game-header__tag">nível 3 · canvas + loop</span>
+      <h1>Cobrinha</h1>
+      <p>Use as setas do teclado (ou os botões abaixo, no celular) para guiar a cobra até a comida sem bater na parede ou em si mesma.</p>
+    </div>
+
+    <div class="panel">
+      <div class="canvas-wrap">
+        <div class="snake-hud">
+          <span>pontos: <strong id="score">0</strong></span>
+          <span>recorde: <strong id="best-score">0</strong></span>
+        </div>
+
+        <canvas id="snake" width="360" height="360" tabindex="0"></canvas>
+
+        <p class="feedback" id="snake-feedback" role="status" aria-live="polite"></p>
+
+        <div class="snake-controls" aria-label="Controles direcionais">
+          <span></span>
+          <button type="button" data-dir="up" aria-label="Cima">↑</button>
+          <span></span>
+          <button type="button" data-dir="left" aria-label="Esquerda">←</button>
+          <button type="button" data-dir="down" aria-label="Baixo">↓</button>
+          <button type="button" data-dir="right" aria-label="Direita">→</button>
+        </div>
+
+        <button class="btn btn--outline" id="restart-btn">Reiniciar</button>
+      </div>
+    </div>
+  </main>
+
+  <footer>feito com HTML, CSS e JavaScript puro — sem frameworks</footer>
+
+  <script src="js/nivel3.js"></script>
+</body>
+</html>
